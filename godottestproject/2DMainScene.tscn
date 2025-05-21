@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://c11u487gf04mr"]
+
+[ext_resource type="Texture2D" uid="uid://b0s7ux5a70j8h" path="res://icon.svg" id="1_qdpc8"]
+[ext_resource type="Script" uid="uid://nhujn83vdcfu" path="res://GuysScript.gd" id="2_i4ax2"]
+
+[node name="Map" type="Node2D"]
+
+[node name="Guy" type="Sprite2D" parent="."]
+position = Vector2(584, 257)
+texture = ExtResource("1_qdpc8")
+script = ExtResource("2_i4ax2")
+
+[node name="Camera2D" type="Camera2D" parent="Guy"]
+
+[node name="Text_CountUp" type="Label" parent="."]
+offset_left = 412.0
+offset_top = 45.0
+offset_right = 820.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 91
+text = "EXAMPLE"
+
+[node name="Platoform" type="Sprite2D" parent="."]
+position = Vector2(584, 390)
+scale = Vector2(5, 0.345)
+texture = ExtResource("1_qdpc8")
